@@ -21,11 +21,11 @@ georgekutti.com/
 ├── awareness.html          # Personal awareness journal (project-awareness)
 ├── time.html               # Time management journal (project-time)
 ├── grooming.html           # Personal grooming journal (project-grooming)
-├── books.html              # Personal library and reading list
+├── reading.html            # Personal library and reading list (renamed from books.html)
 ├── watching.html           # Media consumption tracking log
-├── thoughts.html           # Personal thoughts and micro-blog
+├── thinking.html           # Personal thinking and micro-blog (renamed from thoughts.html)
 ├── images/                 # Organized image assets
-│   ├── books/              # Book cover images
+│   ├── books/              # Book cover images (for reading page)
 │   │   ├── deep-work.jpg
 │   │   ├── the-book-of-secrets.jpg
 │   │   ├── make-time.jpg
@@ -33,6 +33,8 @@ georgekutti.com/
 │   ├── media/              # Show/movie posters
 │   │   └── how-i-met-your-mother-season-4.jpg
 │   └── projects/           # Project images
+│       ├── alto/
+│       │   └── alto-instax.jpg
 │       └── camera/
 │           ├── bought-3d-printer.jpg
 │           ├── bought-raspberry-pi.jpg
@@ -77,9 +79,9 @@ Each project page follows this template for easy manual editing:
 4. Follow same journal entry structure
 
 ## Adding New Books
-1. Save book cover image in `images/` directory
+1. Save book cover image in `images/books/` directory
 2. Name image descriptively (e.g., `book-title.jpg`)
-3. Copy existing book-item div in `books.html` (use template comments)
+3. Copy existing book-item div in `reading.html` (use template comments)
 4. Update image source, title, author, year, and progress
 5. Use percentage format for progress (e.g., "30% complete")
 6. Add Goodreads link to book title
@@ -88,7 +90,7 @@ Each project page follows this template for easy manual editing:
 ## Adding New Thoughts
 1. Copy the entire thought block (from `<!-- THOUGHT START -->` to `<!-- THOUGHT END -->`)
 2. Paste it above the "THOUGHTS START" comment
-3. Update date, time, and content
+3. Update date, time, heading, and content
 4. Maintain the same HTML structure
 
 ## Git Workflow
@@ -118,18 +120,19 @@ Each project page follows this template for easy manual editing:
 - **Template System**: Easy-to-use comment templates for adding books
 - **Responsive Design**: Works on all devices
 
-## Thoughts Page Features
-- **Micro-blog Style**: Twitter-like personal thoughts sharing
+## Thinking Page Features
+- **Micro-blog Style**: Twitter-like personal thinking sharing
 - **Date and Time**: Each thought includes timestamp
-- **Template System**: Easy-to-use comment templates for adding thoughts
+- **Headings**: Each thought entry has a descriptive heading/title
+- **Template System**: Easy-to-use comment templates for adding thinking
 - **Centered Layout**: 600px max-width for optimal readability
-- **Chronological Order**: Newest thoughts appear at the top
+- **Chronological Order**: Newest thinking appears at the top
 - **Minimal Design**: Clean, distraction-free interface
 
 ## Home Page Features
 - **Personal Bio**: Evolving description of the website
 - **Project Links**: Organized list of all project journals
-- **Resource Links**: Quick access to books, thoughts, and other resources
+- **Resource Links**: Quick access to books, thinking, and other resources
 - **Divider Design**: Clean separation between header and content
 - **Centered Layout**: Consistent with all other pages
 
@@ -149,9 +152,10 @@ Each project page follows this template for easy manual editing:
 
 ### New Features
 - **watching.html**: New page for tracking media consumption with awareness focus
-- **Tabbed interface**: project-camera.html now has journal/showcase tabs
+- **Tabbed interface**: project-camera.html and project-alto.html now have journal/showcase tabs
 - **Image organization**: Structured images into books/, media/, and projects/ directories
 - **Apple-style styling**: Rounded corners for project images
+- **Status indicators**: Project status shown with simple text tags (e.g., "[paused]")
 
 ### Dark Mode Improvements
 - **Background color**: Changed from pure black (#000) to softer gray (#1e1e1e)
@@ -162,6 +166,9 @@ Each project page follows this template for easy manual editing:
 - **Project descriptions**: Added brief descriptions to project pages
 - **Consistent branding**: Updated all project titles to use hyphens
 - **Enhanced spacing**: Improved visual hierarchy and readability
+- **Page renaming**: books.html → reading.html, thoughts.html → thinking.html
+- **Thinking page**: Added headings to thought entries for better organization
+- **Project status**: Added status indicators for paused projects
 
 ## Inspiration
 Based on Berkshire Hathaway's famous minimal website design - prioritizing content and functionality over visual complexity.
