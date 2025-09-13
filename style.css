@@ -169,6 +169,15 @@ h1 {
     color: #000;
 }
 
+.book-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.book-title a:hover {
+    text-decoration: underline;
+}
+
 .book-author {
     font-size: 0.8rem;
     color: #666;
@@ -195,6 +204,14 @@ h1 {
         color: #fff;
     }
     
+    .book-title a {
+        color: #fff;
+    }
+    
+    .book-title a:hover {
+        text-decoration: underline;
+    }
+    
     .book-author {
         color: #999;
     }
@@ -209,5 +226,90 @@ h1 {
     
     .book-image {
         border: 1px solid #333;
+    }
+    
+    .header-section {
+        border-bottom: 1px solid #333;
+    }
+    
+    .bio {
+        color: #999;
+    }
+}
+
+/* Page container styles */
+.page-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Home page styles */
+.home-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.bio {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-style: italic;
+    color: #666;
+}
+
+.bio p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.thought {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.thought-header {
+    margin-bottom: 10px;
+}
+
+.thought-date {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.thought-time {
+    font-size: 0.75rem;
+    color: #888;
+    display: block;
+}
+
+.thought-content {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.thought-content p {
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .thought {
+        border-bottom: 1px solid #333;
+    }
+    
+    .thought-date {
+        color: #999;
+    }
+    
+    .thought-time {
+        color: #aaa;
     }
 }

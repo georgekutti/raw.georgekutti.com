@@ -23,10 +23,12 @@ georgekutti.com/
 ├── time.html               # Time management journal
 ├── grooming.html           # Personal grooming journal
 ├── books.html              # Personal library and reading list
+├── thoughts.html           # Personal thoughts and micro-blog
 ├── images/                 # Book cover images and other assets
 │   ├── deep-work.jpg       # Deep Work book cover
 │   ├── the-book-of-secrets.jpg # The Book of Secrets book cover
 │   ├── make-time.jpg       # Make Time book cover
+│   ├── the-pragmatic-programmer.jpg # The Pragmatic Programmer book cover
 │   └── book-placeholder.jpg # Default book cover placeholder
 └── PROJECT_CONTEXT.md      # This file
 ```
@@ -70,9 +72,17 @@ Each project page follows this template for easy manual editing:
 ## Adding New Books
 1. Save book cover image in `images/` directory
 2. Name image descriptively (e.g., `book-title.jpg`)
-3. Copy existing book-item div in `books.html`
-4. Update image source, title, author, and year
-5. Place in appropriate section (currently reading or books read)
+3. Copy existing book-item div in `books.html` (use template comments)
+4. Update image source, title, author, year, and progress
+5. Use percentage format for progress (e.g., "30% complete")
+6. Add Goodreads link to book title
+7. Place in appropriate section (currently reading or books read)
+
+## Adding New Thoughts
+1. Copy the entire thought block (from `<!-- THOUGHT START -->` to `<!-- THOUGHT END -->`)
+2. Paste it above the "THOUGHTS START" comment
+3. Update date, time, and content
+4. Maintain the same HTML structure
 
 ## Git Workflow
 - **Add changes**: `git add .`
@@ -84,17 +94,37 @@ Each project page follows this template for easy manual editing:
 - **Dark mode**: Automatic switching based on `prefers-color-scheme`
 - **Typography**: Georgia serif font throughout
 - **Minimal styling**: Clean, readable layout
+- **Centered content**: 600px max-width containers for optimal readability
 - **Journal entries**: Structured with dates, titles, and content
 - **Links**: Simple underline on hover
 - **Books page**: Clickable book covers, organized layout with images
+- **Responsive design**: Works on all screen sizes
 
 ## Books Page Features
-- **Currently Reading**: Active books with progress tracking
+- **Currently Reading**: Active books with percentage-based progress tracking
 - **Books Read**: Completed books with finish dates
 - **Book Information**: Title, author, publication year
+- **Progress Display**: Percentage completion (e.g., "15% complete")
 - **Clickable Covers**: Book images open full-size in new tab
+- **Clickable Titles**: Book titles link to Goodreads pages
 - **Image Organization**: All book covers stored in `images/` directory
+- **Template System**: Easy-to-use comment templates for adding books
 - **Responsive Design**: Works on all devices
+
+## Thoughts Page Features
+- **Micro-blog Style**: Twitter-like personal thoughts sharing
+- **Date and Time**: Each thought includes timestamp
+- **Template System**: Easy-to-use comment templates for adding thoughts
+- **Centered Layout**: 600px max-width for optimal readability
+- **Chronological Order**: Newest thoughts appear at the top
+- **Minimal Design**: Clean, distraction-free interface
+
+## Home Page Features
+- **Personal Bio**: Evolving description of the website
+- **Project Links**: Organized list of all project journals
+- **Resource Links**: Quick access to books, thoughts, and other resources
+- **Divider Design**: Clean separation between header and content
+- **Centered Layout**: Consistent with all other pages
 
 ## Maintenance
 - **Regular updates**: Add journal entries as needed
