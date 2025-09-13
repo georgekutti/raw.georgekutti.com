@@ -12,24 +12,31 @@ A minimal, text-based personal website inspired by Berkshire Hathaway's ultra-si
 ## Site Structure
 ```
 georgekutti.com/
-├── index.html              # Homepage with project list
-├── style.css               # Shared stylesheet
+├── index.html              # Homepage with organized project sections
+├── style.css               # Shared stylesheet with dark mode improvements
 ├── project-alto.html       # Car restoration project journal
 ├── project-x.html          # Project X journal
+├── project-camera.html     # Custom camera project with tabs (journal/showcase)
 ├── project-upskill.html    # Learning and skill development journal
-├── project-camera.html     # Photography project journal
-├── awareness.html          # Personal awareness journal
-├── money.html              # Financial tracking journal
-├── time.html               # Time management journal
-├── grooming.html           # Personal grooming journal
+├── awareness.html          # Personal awareness journal (project-awareness)
+├── time.html               # Time management journal (project-time)
+├── grooming.html           # Personal grooming journal (project-grooming)
 ├── books.html              # Personal library and reading list
+├── watching.html           # Media consumption tracking log
 ├── thoughts.html           # Personal thoughts and micro-blog
-├── images/                 # Book cover images and other assets
-│   ├── deep-work.jpg       # Deep Work book cover
-│   ├── the-book-of-secrets.jpg # The Book of Secrets book cover
-│   ├── make-time.jpg       # Make Time book cover
-│   ├── the-pragmatic-programmer.jpg # The Pragmatic Programmer book cover
-│   └── book-placeholder.jpg # Default book cover placeholder
+├── images/                 # Organized image assets
+│   ├── books/              # Book cover images
+│   │   ├── deep-work.jpg
+│   │   ├── the-book-of-secrets.jpg
+│   │   ├── make-time.jpg
+│   │   └── the-pragmatic-programmer.jpg
+│   ├── media/              # Show/movie posters
+│   │   └── how-i-met-your-mother-season-4.jpg
+│   └── projects/           # Project images
+│       └── camera/
+│           ├── bought-3d-printer.jpg
+│           ├── bought-raspberry-pi.jpg
+│           └── took-photo.jpg
 └── PROJECT_CONTEXT.md      # This file
 ```
 
@@ -132,8 +139,32 @@ Each project page follows this template for easy manual editing:
 - **Backup**: Git repository serves as backup
 - **Domain**: Managed through Squarespace DNS
 
+## Recent Updates (September 2025)
+
+### Homepage Organization
+- **Reorganized sections**: side projects, personal projects, log
+- **Consistent naming**: All projects use "project-" prefix
+- **Moved project-upskill**: From side projects to personal projects section
+- **Renamed resources**: Changed to "log" for better accuracy
+
+### New Features
+- **watching.html**: New page for tracking media consumption with awareness focus
+- **Tabbed interface**: project-camera.html now has journal/showcase tabs
+- **Image organization**: Structured images into books/, media/, and projects/ directories
+- **Apple-style styling**: Rounded corners for project images
+
+### Dark Mode Improvements
+- **Background color**: Changed from pure black (#000) to softer gray (#1e1e1e)
+- **Text color**: Softened from pure white (#fff) to gray-white (#d4d4d4)
+- **Better contrast**: More comfortable reading experience
+
+### Content Updates
+- **Project descriptions**: Added brief descriptions to project pages
+- **Consistent branding**: Updated all project titles to use hyphens
+- **Enhanced spacing**: Improved visual hierarchy and readability
+
 ## Inspiration
 Based on Berkshire Hathaway's famous minimal website design - prioritizing content and functionality over visual complexity.
 
 ---
-*Last updated: December 2024*
+*Last updated: September 2025*

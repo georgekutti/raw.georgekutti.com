@@ -8,8 +8,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #000;
-        color: #fff;
+        background-color: #1e1e1e;
+        color: #d4d4d4;
     }
 }
 
@@ -54,11 +54,11 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
     .projects a {
-        color: #fff;
+        color: #d4d4d4;
     }
     
     .back-link a {
-        color: #fff;
+        color: #d4d4d4;
     }
 }
 
@@ -100,7 +100,7 @@ h1 {
     }
     
     .entry-title {
-        color: #fff;
+        color: #d4d4d4;
     }
 }
 
@@ -197,15 +197,15 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
     .books-section h2 {
-        color: #fff;
+        color: #d4d4d4;
     }
     
     .book-title {
-        color: #fff;
+        color: #d4d4d4;
     }
     
     .book-title a {
-        color: #fff;
+        color: #d4d4d4;
     }
     
     .book-title a:hover {
@@ -252,12 +252,12 @@ h1 {
 .header-section {
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .bio {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-style: italic;
     color: #666;
 }
@@ -312,4 +312,70 @@ h1 {
     .thought-time {
         color: #aaa;
     }
+}
+
+/* Tab styles */
+.tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+    color: #000;
+}
+
+.tab-button.active {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    .tabs {
+        border-bottom: 1px solid #333;
+    }
+    
+    .tab-button {
+        color: #999;
+    }
+    
+    .tab-button:hover {
+        color: #d4d4d4;
+    }
+    
+    .tab-button.active {
+        color: #d4d4d4;
+        border-bottom-color: #d4d4d4;
+    }
+}
+
+/* Apple-style image styling */
+.showcase-image {
+    margin-bottom: 20px;
+}
+
+.showcase-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
 }

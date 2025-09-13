@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project camera - georgekutti</title>
+    <title>project-camera - georgekutti</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,30 +12,107 @@
             <a href="index.html">← back to georgekutti</a>
         </div>
         
-        <h1>project camera</h1>
-    
-    <!-- JOURNAL ENTRIES START -->
-    <!-- 
-        TO ADD A NEW ENTRY:
-        1. Copy the entire entry block below (from ENTRY START to ENTRY END)
-        2. Paste it above this comment
-        3. Update the date, title, and content
-        4. Keep the same structure for consistency
-    -->
-    
-    <!-- ENTRY START -->
-    <div class="journal-entry">
-        <div class="entry-header">
-            <span class="entry-date">August 24, 2025, Sunday, 12:59 AM</span>
-            <span class="entry-title">The Plan</span>
+        <h1>project-camera</h1>
+        
+        <div class="content">
+            <p>a small project to make my own point-and-shoot camera.</p>
         </div>
-        <div class="entry-content">
-            <p>I am taking leave for a week in September and buidling it.</p>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('journal')">journal</button>
+            <button class="tab-button" onclick="showTab('showcase')">showcase</button>
+        </div>
+
+        <!-- JOURNAL TAB -->
+        <div id="journal" class="tab-content active">
+            <!-- JOURNAL ENTRIES START -->
+            <!-- 
+                TO ADD A NEW ENTRY:
+                1. Copy the entire entry block below (from ENTRY START to ENTRY END)
+                2. Paste it above this comment
+                3. Update the date, title, and content
+                4. Keep the same structure for consistency
+            -->
+            
+            <!-- ENTRY START -->
+            <div class="journal-entry">
+                <div class="entry-header">
+                    <span class="entry-date">September 13, 2025, Saturday, 10:26 PM</span>
+                    <span class="entry-title">Now I need to find a screen</span>
+                </div>
+                <div class="entry-content">
+                    <p>It is a long task. I need to find a screen that checks all the items in the following list:</p>
+                    <ul>
+                        <li>It should be small, like old point-and-shoot camera screens.</li>
+                        <li>It should be a color display.</li>
+                        <li>It should have decent resolution. I don’t need very high pixel density, but it should be good enough so that people’s faces are distinguishable.</li>
+                        <li>It should be compatible with the Raspberry Pi Zero 2 W.</li>
+                        <li>It shouldn’t consume much power.</li>
+                        <li>It should be small enough that it doesn’t add much bulk to the camera. The camera should be slim enough to fit in my pants pocket.</li>
+                    </ul>
+                    <p>I should find and order it soon, so that it arrives in time for my project week while I’m on leave.</p>
+                </div>
+            </div>
+            <!-- ENTRY END -->
+
+
+            <!-- ENTRY START -->
+            <div class="journal-entry">
+                <div class="entry-header">
+                    <span class="entry-date">September 13, 2025, Saturday, 10:16 PM</span>
+                    <span class="entry-title">I am back on the project</span>
+                </div>
+                <div class="entry-content">
+                    <p>I applied for leave for the last week of this month, so I am back on the project.</p>
+                    <p>I am having thoughts about whether I should include a screen or not.</p>
+                    <p>Yes, we need a screen. We are adding a screen. Otherwise, there may not be a fun element in it.</p>
+                    <p>The original idea was to have a film camera–like experience, like not seeing the photo until it’s developed.</p>
+                    <p>We’ll decide on that later.</p>
+                </div>
+            </div>
+            <!-- ENTRY END -->
+
+            <!-- ENTRY START -->
+            <div class="journal-entry">
+                <div class="entry-header">
+                    <span class="entry-date">August 24, 2025, Sunday, 12:59 AM</span>
+                    <span class="entry-title">The Plan</span>
+                </div>
+                <div class="entry-content">
+                    <p>I am taking leave for a week in September and buidling it.</p>
+                </div>
+            </div>
+            <!-- ENTRY END -->
+            
+            <!-- JOURNAL ENTRIES END -->
+        </div>
+
+        <!-- SHOWCASE TAB -->
+        <div id="showcase" class="tab-content">
+            <p>showcase content coming soon...</p>
         </div>
     </div>
-    <!-- ENTRY END -->
-    
-        <!-- JOURNAL ENTRIES END -->
-    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+            
+            // Remove active class from all buttons
+            var tabButtons = document.getElementsByClassName('tab-button');
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
