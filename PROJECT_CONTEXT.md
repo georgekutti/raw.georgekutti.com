@@ -18,9 +18,10 @@ georgekutti.com/
 ├── project-x.html          # Project X journal
 ├── project-camera.html     # Custom camera project with tabs (journal/showcase)
 ├── project-upskill.html    # Learning and skill development journal
-├── awareness.html          # Personal awareness journal (project-awareness)
-├── time.html               # Time management journal (project-time)
-├── grooming.html           # Personal grooming journal (project-grooming)
+├── project-awareness.html  # Personal awareness journal
+├── project-time.html       # Time management journal
+├── project-grooming.html   # Personal grooming journal
+├── project-money.html      # Money management journal
 ├── reading.html            # Personal library and reading list (renamed from books.html)
 ├── watching.html           # Media consumption tracking log
 ├── thinking.html           # Personal thinking and micro-blog (renamed from thoughts.html)
