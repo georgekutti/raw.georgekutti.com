@@ -11,7 +11,7 @@ A minimal, text-based personal website inspired by Berkshire Hathaway's ultra-si
 
 ## Site Structure
 ```
-raw.georgekutti.com/
+/Users/george/Development/raw.georgekutti.com/
 ├── index.html              # Homepage with organized project sections
 ├── style.css               # Shared stylesheet with dark mode improvements
 ├── project-alto.html       # Car restoration project journal
