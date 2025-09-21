@@ -1,4 +1,4 @@
-# georgekutti.com - Project Context
+# raw.georgekutti.com - Project Context
 
 ## Overview
 A minimal, text-based personal website inspired by Berkshire Hathaway's ultra-simple design philosophy. The site serves as a personal journal and project documentation platform.
@@ -11,7 +11,7 @@ A minimal, text-based personal website inspired by Berkshire Hathaway's ultra-si
 
 ## Site Structure
 ```
-georgekutti.com/
+raw.georgekutti.com/
 ├── index.html              # Homepage with organized project sections
 ├── style.css               # Shared stylesheet with dark mode improvements
 ├── project-alto.html       # Car restoration project journal
@@ -45,7 +45,7 @@ georgekutti.com/
 
 ## Technical Details
 - **Hosting**: GitHub Pages
-- **Domain**: georgekutti.com (custom domain configured)
+- **Domain**: raw.georgekutti.com (custom domain configured)
 - **CSS**: External stylesheet with dark/light mode support
 - **Responsive**: Basic responsive design
 - **Theme**: Automatic dark/light mode based on device preference
