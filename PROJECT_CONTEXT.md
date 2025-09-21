@@ -45,7 +45,9 @@ A minimal, text-based personal website inspired by Berkshire Hathaway's ultra-si
 
 ## Technical Details
 - **Hosting**: GitHub Pages
-- **Domain**: raw.georgekutti.com (custom domain configured)
+- **Domain**: raw.georgekutti.com (custom domain configured and working)
+- **Repository**: raw.georgekutti.com (renamed from georgekutti.com)
+- **DNS**: CNAME record pointing to raw.georgekutti.github.io
 - **CSS**: External stylesheet with dark/light mode support
 - **Responsive**: Basic responsive design
 - **Theme**: Automatic dark/light mode based on device preference
@@ -141,9 +143,16 @@ Each project page follows this template for easy manual editing:
 - **Regular updates**: Add journal entries as needed
 - **File editing**: Direct HTML editing, no build process
 - **Backup**: Git repository serves as backup
-- **Domain**: Managed through Squarespace DNS
+- **Domain**: Managed through NS1 DNS provider
 
 ## Recent Updates (September 2025)
+
+### DNS and Domain Configuration
+- **Repository renamed**: Changed from georgekutti.com to raw.georgekutti.com
+- **Custom domain working**: raw.georgekutti.com now live and accessible
+- **DNS configuration**: CNAME record properly set up pointing to raw.georgekutti.github.io
+- **GitHub Pages**: Successfully configured with custom domain
+- **Subdomain setup**: Allows main domain (georgekutti.com) to be used for other projects
 
 ### Homepage Organization
 - **Reorganized sections**: side projects, personal projects, log
