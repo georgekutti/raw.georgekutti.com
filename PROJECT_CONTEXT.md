@@ -170,6 +170,7 @@ Each project page follows this template for easy manual editing:
 - **Page renaming**: books.html → reading.html, thoughts.html → thinking.html
 - **Thinking page**: Added headings to thought entries for better organization
 - **Project status**: Added status indicators for paused projects
+- **Watching page**: Added day of the week to all journal entries for better time awareness tracking
 
 ## Inspiration
 Based on Berkshire Hathaway's famous minimal website design - prioritizing content and functionality over visual complexity.
